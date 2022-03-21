@@ -1,0 +1,197 @@
+.logo {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #F3F3F4;
+    position: relative;
+}
+.circle1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(226, 209, 249, 0.46);
+    border-radius: 50%;
+    top: -150px;
+    left: -50px;
+    z-index: 2;
+}
+.circle2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(49, 119, 115, 0.52);
+    border-radius: 50%;
+    top: -120px;
+    left: -120px;
+}
+.circle3 {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border: 2px dashed rgba(49, 119, 115, 0.52);
+    border-radius: 50%;
+    top: -400px;
+    left: -400px;
+    transform-origin: 400px 400px;
+    animation: spin2 80s linear infinite;
+}
+.circle4 {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(226, 209, 249, 0.46);
+    border-radius: 50%;
+    top: 50%;
+    right: -250px;
+    z-index: 2;
+}
+.circle5 {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(226, 209, 249, 0.46);
+    border-radius: 50%;
+    top: 55%;
+    right: -220px;
+}
+.circle6 {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border: 2px dashed rgba(49, 119, 115, 0.52);
+    border-radius: 50%;
+    top: 55%;
+    right: -400px;
+    transform-origin: 150px 150px;
+    animation: spin2 80s linear infinite;
+}
+.circle7 {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(226, 209, 249, 0.46);
+    border-radius: 50%;
+    top: 75%;
+    left: -220px;
+}
+.circle8 {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: rgba(226, 209, 249, 0.46);
+    border-radius: 50%;
+    top: 80%;
+    left: -200px;
+}
+.circle9 {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border: 2px dashed rgba(49, 119, 115, 0.52);
+    border-radius: 50%;
+    top: 80%;
+    left: -200px;
+    transform-origin: 150px 150px;
+    animation: spin2 80s linear infinite;
+}
+router-outlet {
+    position: fixed;
+    top: 400px;
+}
+.question1 {
+    position: absolute;
+    font-size: 78px;
+    top: 80%;
+    left: 5%;
+    animation: spin2 12s linear infinite;
+} 
+@keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+}
+.question2 {
+    position: absolute;
+    font-size: 100px;
+    top: 15%;
+    left: 25%;
+    transform-origin: 50px 50px;
+    animation: spin2 12s linear infinite;
+} 
+@keyframes spin2 {
+    100% {
+      transform: rotate(1turn);
+    }
+}
+.question3 {
+    position: absolute;
+    font-size: 100px;
+    top: 75%;
+    left: 75%;
+    transform-origin: 10px 50px;
+    animation: spin2 12s linear infinite;
+} 
+@keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+}
+.question4 {
+    position: absolute;
+    font-size: 100px;
+    top: 15%;
+    left: 95%;
+    transform-origin: bottom right 60px;
+    animation: spin2 2s linear infinite reverse;
+} 
+@keyframes spin2 {
+    100% {
+      transform: rotate(1turn);
+    }
+}
+mat-icon {
+    color: #e9e6e6;
+}
+.perm1 {
+    position: absolute;
+    font-size: 150px;
+    top: 10%;
+    right: 95%;
+    transform-origin: 75px 75px;
+    animation: spin4 12s linear infinite reverse;
+} 
+.perm2 {
+    position: absolute;
+    font-size: 150px;
+    top: 75%;
+    left: 30%;
+    transform-origin: 75px 75px;
+    animation: spin3 12s linear infinite reverse;
+} 
+@keyframes spin3 {
+    0%   {top:50%;}
+    50%  {top:80px;}
+    100% {top:50%;}
+}
+@keyframes spin4 {
+    0%   {top:20%;}
+    50%  {top:50%;}
+    100% {top:20%;}
+}
+.perm3 {
+    position: absolute;
+    font-size: 150px;
+    top: 20%;
+    left: 55%;
+    transform-origin: 75px 75px;
+    animation: spin4 12s linear infinite reverse;
+} 
+.perm4 {
+    position: absolute;
+    font-size: 150px;
+    top: 75%;
+    left: 75%;
+    transform-origin: 75px 75px;
+    animation: spin3 12s linear infinite reverse;
+}

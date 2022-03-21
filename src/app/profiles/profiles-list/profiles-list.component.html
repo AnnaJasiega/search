@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="square"></div>
+    <h1> {{ who | uppercase }}</h1>
+    <input class="col-md-12" (keyup.enter)='filterList($event)'/>
+    <br><br><br><br>
+    <h1> {{ find | uppercase }}</h1>
+    <div *ngFor="let person of listToDisplay" class="col-md-6 item" [routerLink]="[person.id]">
+        <div class="icon">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">person_pin</mat-icon>
+        </div>
+        <div>
+            <h3>{{person.username | uppercase}}</h3>
+            <h1>{{person.name}}</h1>
+        </div>
+    </div>
+</div>
